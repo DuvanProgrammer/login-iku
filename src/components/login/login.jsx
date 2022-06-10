@@ -51,6 +51,15 @@ export default function login() {
                 </div>
             </div>
         </div>
+        <div className="iku-login__footer">
+            <div className="iku-login__footer-content">
+                <span>© IKU I Know You</span>
+                <div className="iku-login__footer-links">
+                    <a href="#">Términos de servicio</a> - 
+                    <a href="#"> Privacidad y datos personales</a>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }

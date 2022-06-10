@@ -6,8 +6,11 @@
         position: absolute
         right: 0
         bottom: 0
+        width: 60%
     &__content
         padding: 5em 7em
+        z-index: 1
+        position: relative
     &__file-1
         width: 550px
         h1
@@ -96,6 +99,7 @@
         width: 550px
         float: right
         padding-top: 1em
+        margin-bottom: 2em
         h3
             font-size: 20px
             color: #4C6FFC
@@ -113,3 +117,71 @@
             border-radius: 5px
             font-size: 15px
             font-weight: 300
+            margin-bottom: .5em
+    &__footer
+        width: 550px
+        margin-left: 7em
+        position: relative
+        z-index: 1
+        &-content
+            border-top: 1px solid #E6E7ED
+            display: flex
+            padding-top: 2em
+            justify-content: space-between
+            align-items: center
+            span, a
+                font-size: 12px
+                color: #092532
+                text-decoration: none
+                line-height: 1.2em
+
+@media (min-width: 1214px) and (max-width: 1344px)
+    .iku-login
+        &__content
+            padding: 3em
+        &__footer
+            margin-left: 3em
+
+@media (min-width: 635px) and (max-width: 1213px)
+    .iku-login
+        height: 100%
+        position: relative
+        &__content
+            width: 550px
+            margin: auto
+            padding: 2em 0
+            .row
+                flex-direction: column-reverse
+                .col-lg-6
+                    width: 100%
+        &__people
+            display: none
+        &__file-1
+            width: 100%
+        &__file-2
+            float: left
+            width: 100%
+        &__form
+            .form-group
+                background-color: #EEF0FA
+        &__footer
+            width: 550px
+            margin: auto
+@media (max-width: 635px)
+    .iku-login
+        &__content
+            width: 100%
+            padding: 3em 2em
+            .row
+                flex-direction: column-reverse
+        &__people
+            display: none
+        &__file-1
+            width: 100%
+        &__file-2
+            width: 100%
+            float: left
+        &__footer
+            width: 100%
+            margin: auto
+            padding: 2em
